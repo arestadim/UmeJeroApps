@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cardview_kasir"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <TextView
+            android:id="@+id/nama_produk_kasir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="item"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/harga_produk_kasir"
+            android:text="Rp."
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/harga_produk_kasir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="harga"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

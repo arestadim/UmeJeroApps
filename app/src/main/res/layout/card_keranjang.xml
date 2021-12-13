@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:minHeight="100dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relative_symbol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/button_edit_keranjang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_toLeftOf="@id/button_delete_keranjang"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/button_delete_keranjang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nama_keranjang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="nama_produk"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/harga_keranjang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nama_keranjang"
+                    android:padding="5dp"
+                    android:text="harga"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nama_keranjang"
+                    android:layout_toRightOf="@id/harga_keranjang"
+                    android:padding="5dp"
+                    android:text="x"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/qty_keranjang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nama_keranjang"
+                    android:layout_toRightOf="@+id/x"
+                    android:padding="5dp"
+                    android:text="qty"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/subtotal_keranjang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nama_keranjang"
+                    android:layout_toRightOf="@id/qty_keranjang"
+                    android:padding="5dp"
+                    android:text="Total"
+                    android:textColor="#000"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

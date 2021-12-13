@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:id="@+id/labelNamaProdukEdit"
+        style="@style/viewParent.headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Produk" />
+
+    <TextView
+        android:id="@+id/labelKuantitiEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelNamaProdukEdit"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Jumlah"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etKuantitiEdit"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelKuantitiEdit"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_toStartOf="@+id/btnTambahKuantiti"
+        android:layout_toLeftOf="@+id/btnTambahKuantiti"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnTambahKuantiti"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:onClick="increment"
+        android:text="+"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnKurangKuantiti"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:layout_toStartOf="@+id/etKuantitiEdit"
+        android:layout_toLeftOf="@+id/etKuantitiEdit"
+        android:gravity="center"
+        android:onClick="increment"
+        android:text="-"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/btnSaveKuantitiEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etKuantitiEdit"
+        android:background="@drawable/btnstyle"
+        android:padding="10dp"
+        android:text="tambah"
+        android:textColor="#fff" />
+</RelativeLayout>

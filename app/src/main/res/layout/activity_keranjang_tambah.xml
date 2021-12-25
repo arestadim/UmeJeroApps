@@ -4,41 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:layout_margin="30dp"
     >
-
     <TextView
-        android:id="@+id/labelNamaProdukEdit"
-        style="@style/viewParent.headerText"
+        android:id="@+id/labelNamaProdukTambah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Produk" />
-
+        android:text="Nama Produk"
+        style="@style/viewParent.headerText"/>
     <TextView
-        android:id="@+id/labelKuantitiEdit"
+        android:layout_below="@+id/labelNamaProdukTambah"
+        android:id="@+id/labelKuantiti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/labelNamaProdukEdit"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:text="Jumlah"
+        android:text="Kuantiti"
+        android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         android:textSize="20dp"
-        android:textStyle="bold" />
+        />
+
 
     <EditText
-        android:id="@+id/etKuantitiEdit"
-        android:layout_width="279dp"
+        android:id="@+id/etKuantitiTambah"
+        android:textAlignment="center"
+        android:layout_width="225dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/labelKuantitiEdit"
-        android:layout_marginTop="-7dp"
-        android:layout_marginEnd="-2dp"
-        android:layout_marginRight="-2dp"
+        android:layout_below="@id/labelKuantiti"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         android:layout_toStartOf="@+id/btnTambahKuantiti"
         android:layout_toLeftOf="@+id/btnTambahKuantiti"
-        android:gravity="center_horizontal"
         android:paddingTop="10dp"
-        android:textAlignment="center" />
+        android:text="0"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/btnTambahKuantiti"
@@ -46,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginTop="60dp"
+        android:background="@color/float_transparent"
         android:gravity="center"
         android:onClick="increment"
         android:text="+"
@@ -55,22 +55,24 @@
         android:id="@+id/btnKurangKuantiti"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_marginTop="60dp"
-        android:layout_toStartOf="@+id/etKuantitiEdit"
-        android:layout_toLeftOf="@+id/etKuantitiEdit"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_toStartOf="@+id/etKuantitiTambah"
+        android:layout_toLeftOf="@+id/etKuantitiTambah"
+        android:background="@color/float_transparent"
         android:gravity="center"
         android:onClick="increment"
         android:text="-"
         android:textSize="23dp" />
 
     <Button
-        android:id="@+id/btnSaveKuantitiEdit"
+        android:id="@+id/btnSaveKuantitiTambah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etKuantitiEdit"
+        android:layout_below="@+id/etKuantitiTambah"
         android:background="@drawable/btnstyle"
         android:padding="10dp"
-        android:text="tambah"
+        android:text="Simpan"
         android:textColor="#fff" />
 </RelativeLayout>

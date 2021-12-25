@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_keranjang"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+
+    <TextView
+        android:id="@+id/nama_keranjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="nama_produk"/>
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/harga_keranjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/nama_keranjang"
+        android:padding="5dp"
+        android:text="harga"/>
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama_keranjang"
+        android:layout_toRightOf="@id/harga_keranjang"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="x"
+        android:textColor="#000"/>
+
+    <TextView
+        android:textColor="#000"
+        android:layout_below="@+id/nama_keranjang"
+        android:id="@+id/qty_keranjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/x"
+        android:padding="5dp"
+        android:text="qty"
+
+        />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_below="@+id/nama_keranjang"
+        android:id="@+id/subtotal_keranjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/qty_keranjang"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="Total" />
+
+
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/button_edit_keranjang"
+        android:layout_width="wrap_content"
+        android:textColor="@color/whiteBodyColor"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/button_delete_keranjang"
+        android:text="Edit"
+        />
+
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/button_delete_keranjang"
+        android:layout_width="wrap_content"
+        android:textColor="@color/whiteBodyColor"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Delete" />
+</RelativeLayout>
